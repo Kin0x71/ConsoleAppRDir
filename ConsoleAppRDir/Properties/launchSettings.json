@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ConsoleAppRDir": {
+      "commandName": "Project",
+      "commandLineArgs": "-p \"C:\\Users\\Kin\\source\\repos\\ConsoleAppRDir\\test_folder\" -q -o \"C:\\Users\\Kin\\source\\repos\\ConsoleAppRDir\\test_folder\\log.txt\" -h"
+    }
+  }
+}
