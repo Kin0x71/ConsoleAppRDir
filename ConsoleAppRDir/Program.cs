@@ -99,23 +99,23 @@ namespace ConsoleAppRDir
 			{
 				if(size < 1024)
 				{
-					return string.Format("{0} b", size);
+					return string.Format("({0} bytes)", size);
 				}
 				else if(size < 1048576)
 				{
-					return string.Format("{0:0.00} Kb", size / 1024.0f);
+					return string.Format("({0:0.00} kilobytes)", size / 1024.0f);
 				}
 				else if(size < 1073741824)
 				{
-					return string.Format("{0:0.00} Mb", size / 1048576.0f);
+					return string.Format("({0:0.00} megabytes)", size / 1048576.0f);
 				}
 				else if(size < 1099511627776)
 				{
-					return string.Format("{0:0.00} Gb", size / 1073741824.0f);
+					return string.Format("({0:0.00} gigabytes)", size / 1073741824.0f);
 				}
 				else
 				{
-					return string.Format("{0:0.00} Tb", size / 1099511627776.0f);
+					return string.Format("({0:0.00} terabytes)", size / 1099511627776.0f);
 				}
 			}
 
