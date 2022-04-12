@@ -122,11 +122,11 @@ namespace ConsoleAppRDir
 			string lines = "-";
 			for(int i = 0; i < dir_info.deep; ++i) lines += "-";
 
-			log(lines + dir_info.name + " " + (IsHumanread ? size_format(dir_info.total_size) : dir_info.total_size.ToString() + " b"));
+			log(lines + dir_info.name + " " + (IsHumanread ? size_format(dir_info.total_size) : "(" + dir_info.total_size.ToString() + " bytes)"));
 
 			foreach(_file_info file_info in dir_info.files)
 			{
-				log(lines + file_info.name + " " + (IsHumanread ? size_format(file_info.size) : file_info.size.ToString() + " b"));
+				log(lines + file_info.name + " " + (IsHumanread ? size_format(file_info.size) : "(" + file_info.size.ToString() + " bytes)"));
 			}
 
 			foreach(_dir_info sub_dir in dir_info.sub_dirs)
