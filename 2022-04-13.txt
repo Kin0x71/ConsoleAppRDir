@@ -1,0 +1,10 @@
+-test_folder 491 b
+--folder1 399 b
+--file2.txt 200 b
+--somefile1.txt 100 b
+---subfolder1 99 b
+---file3.txt 99 b
+--folder2 92 b
+---folder3 92 b
+----folder4 92 b
+----somefile5.txt 92 b
